@@ -1,4 +1,3 @@
-import { PropsWithChildren } from "react"
 import { ContentSkills } from "../resume.types"
 
 
@@ -24,30 +23,6 @@ export default function Skill({type, primary, secondary, focus}:ContentSkills) {
     // }
     ]
 
-    // return (
-    //     <div>
-    //         <div className="px-4 sm:px-0">
-    //             <h3 className="text-base font-semibold leading-7 text-gray-900">{type}</h3>
-    //             <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">skill type details</p>
-    //         </div>
-    //         <div className="mt-6 border-t border-gray-100">
-    //             <dl className="divide-y divide-gray-100">
-    //             {groups.map(g => {
-    //                 return (
-    //                     <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-    //                         <dt className="text-sm font-medium leading-6 text-gray-900">{g.name}</dt>
-    //                         <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-    //                         {g.group?.map((item, i) => {
-    //                             return (<span className="btn join-item">{item}</span>)
-    //                         })}
-    //                         </dd>
-    //                     </div>
-    //                 )
-    //             })}
-    //             </dl>
-    //         </div>
-    //     </div>
-    // )
 
     return (
         <div className="mb-4">
@@ -55,13 +30,14 @@ export default function Skill({type, primary, secondary, focus}:ContentSkills) {
                 <h2 className="text-bold text-gray-600 tracking-wider">{type}</h2>
             </div>
             <div>
-                {groups.map(g => {
+                {groups.map((g, idx) => {
                     return (
-                        <p className="grid grid-cols-5 gap-4 mt-1 items-center">
+                        <p key={g.name+idx} className="grid grid-cols-5 gap-4 mt-1 items-center">
                             <span className={g.classes}>{g.name}: </span>
                             <span className="col-span-4 mt-1">
                                 {g.group?.map((item, i) => {
-                                    return (<span className={g.button}>{item}</span> )
+                                    let key = "groupitem" + idx + i;
+                                    return (<span key={key} className={g.button}>{item}</span> )
                                 })}
                             </span>
                         </p>

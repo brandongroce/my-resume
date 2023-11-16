@@ -17,8 +17,8 @@ export default function Experience({name, products, type, position, detail, date
                 </p>
             </div>
             <ul className="mt-2 ml-4 list-disc list-inside">
-            {duties?.map(duty => {
-                return (<li className="text-sm pb-1 text-gray-500">{duty}</li>)
+            {duties?.map((duty, idx) => {
+                return (<li key={"duty"+idx} className="text-sm pb-1 text-gray-500">{duty}</li>)
             })}
             </ul>
         </div>
