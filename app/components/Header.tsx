@@ -23,7 +23,7 @@ export default function Header(props:Resume) {
                 </p>
                 <div className="mt-6 flex flex-wrap gap-4 justify-center">
                     <a href="mailto:brandon@groce.dev" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Contact</a>
-                    <a href="#" className="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a>
+                    <a href="/brandon_groce_resume.pdf" target="_blank" rel="noopener noreferrer" data-alt="link to my resume PDF" className="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a>
                 </div>
             </div>
             <hr className="my-6 border-t border-gray-300" />
