@@ -32,12 +32,12 @@ export default function Home() {
                     return (<Activity key={key} {...activity} />)
                   })}
                 </Section>
-                <Section id="referenceSection" title={resume.sections.references.title}>
+                {/* <Section id="referenceSection" title={resume.sections.references.title}>
                   {resume.sections.references.content?.map( (reference, i) => {
                     let key = "reference" + i
                     return (<Reference key={key} {...reference} />)
                   })}
-                </Section>
+                </Section> */}
               </div>
             </div>
           </div>
