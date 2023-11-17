@@ -10,7 +10,7 @@ export default function Home() {
             <Header {...resume} />
             <div className="col-span-4 sm:col-span-9">
               <div className="bg-white shadow rounded-lg p-6">
-                {/* <About /> */}
+                <About />
                 <Section id="skillsSection" title={resume.sections.skills.title}>
                   {resume.sections.skills.content?.map( (skill, i) => {
                     let key = "skill" + i

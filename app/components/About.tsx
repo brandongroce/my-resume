@@ -1,17 +1,21 @@
 export default function About() {
     return (
         <div>
-            <h2 className="text-xl font-bold mb-4">About Me</h2>
-            <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est
-                vitae tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
-                suscipit. Nunc finibus vel ante id euismod. Vestibulum ante ipsum primis in faucibus orci luctus
-                et ultrices posuere cubilia Curae; Aliquam erat volutpat. Nulla vulputate pharetra tellus, in
-                luctus risus rhoncus id.
+            <h2 className="text-xl font-bold text-gray-700 mb-4">Hello!</h2>
+            <p className="text-gray-500 text-sm pb-2">I'm a 15 year software guy who's been banging on computers since I was 5.
+            I started my professional career working small to medium projects in the php era, using cms systems and frameworks with mysql to build
+            anything and everything.  I moved on to work for several game companies, working on starwars and marvel games; quickly moving into positions of
+            application design and architecture and leading teams to success, until ultimately heading to The Mouse himeself for a bit.
+            At Disney, I worked as a solutions engineer for their one identity system, helping teams of some of the biggest names across the world integrate our user account and auth product.
             </p>
-            <h3 className="font-semibold text-center mt-3 -mb-2">
+            <p className="text-sm text-gray-500">For the last 5 years, I've worked for a top 10 insurance company, doing development, design, operations, planning, architecture, and ultimately hiring and leading a team.
+            I'm a Seattle guy, but my work has taken me to California, Wisconsin, Boston, and even Shanghai for knowlege share, presenting designs, and pitching ideas.  
+            If you don't see me around learning and building something new, I'll be off somewhere traveling in one of my self converted travel vans!
+            </p>
+            {/* <h3 className="font-semibold text-center mt-3 -mb-2">
                 Find me on
-            </h3>
-            <div className="flex justify-center items-center gap-6 my-6">
+            </h3> */}
+            {/* <div className="flex justify-center items-center gap-6 my-6">
                 <a className="text-gray-700 hover:text-orange-600" aria-label="Visit Brandon Groce's LinkedIn" href="https://www.linkedin.com/in/brandongroce/"
                     target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="h-6">
                         <path fill="currentColor"
@@ -26,7 +30,7 @@ export default function About() {
                         </path>
                     </svg>
                 </a>
-            </div>
+            </div> */}
         </div>
     )
 }
