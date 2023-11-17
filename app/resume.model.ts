@@ -22,22 +22,24 @@ const serverSection:ContentSkills = {
         "Linux",
         "Node",
         "Apache", 
-        "Nginx"
+        "Nginx", 
+        "AWS", 
+        "Docker"
     ],
     secondary: [
         "Tomcat", 
         "Jetty",
         "IIS",
-        "AWS",
         "Kubernetes"
     ],
     focus: [
         "Configuration",
-        "Shell Scripting",
+        "Shell Scripting & Tools",
         "Build Processes",
         "VCS Administration",
         "Deployment",
-        "Scalability"
+        "Scalability",
+        "Microservices"
     ]
 }
 const dbSection:ContentSkills = {
@@ -45,8 +47,9 @@ const dbSection:ContentSkills = {
     primary: [
         "SQL",
         "MongoDB",
-        "Memcache",
-        "Redis"
+        "Memcached",
+        "Redis",
+        "GraphQL"
     ],
     secondary: [
         "Hibernate",
@@ -82,7 +85,7 @@ const codeSection:ContentSkills = {
         "Documentation",
         "Logging",
         "Testing",
-        "Webservices"
+        "Optimization"
     ]
 }
 const frameworkSection:ContentSkills = {
@@ -90,10 +93,9 @@ const frameworkSection:ContentSkills = {
     primary: [
         "React",
         "Next",
+        "Express",
         "Meteor",
-        "Angular",
-        "jQuery", 
-        "Express", 
+        "Angular", 
         "Drupal",
         "Wordpress",
         "Cypress"
@@ -109,11 +111,13 @@ const frameworkSection:ContentSkills = {
     ],
     focus: [
         "MVC",
-        "Modules",
+        "Prototyping",
         "APIs",
         "eCommerce",
         "Auth",
-        "Encryption"
+        "Encryption",
+        "Webservices",
+        "FEs"
     ]
 }
 export const skills:ContentSkills[] = [ codeSection, frameworkSection, serverSection, dbSection ]
