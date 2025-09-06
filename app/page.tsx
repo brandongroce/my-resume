@@ -2,6 +2,7 @@ import Image from 'next/image'
 import resume from './resume.model'
 import { Header, Section, About, Skill, Experience, Education, Activity, Reference } from './components'
 
+// Bumping node to version 22 LTS
 export default function Home() {
   return (
     <div className="bg-gray-100 font-poppins">
